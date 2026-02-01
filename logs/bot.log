@@ -1,0 +1,284 @@
+2026-01-31 21:56:26 | INFO     | bot.run_bot | Starting Telegram bot...
+2026-01-31 21:57:16 | INFO     | bot.run_bot | Starting Telegram bot...
+2026-01-31 21:57:16 | INFO     | bot.run_bot | Running in polling mode
+2026-01-31 21:57:17 | INFO     | bot.run_bot | Existing webhook removed and updates dropped
+2026-01-31 21:57:17 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-01-31 21:57:17 | INFO     | bot.run_bot | Database initialized
+2026-01-31 21:57:17 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-01-31 21:57:22 | INFO     | bot.run_bot | Ichancy API is online
+2026-01-31 21:57:36 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): 🏠 القائمة الرئيسية
+2026-01-31 21:57:36 | INFO     | bot.repository | Created user: 1136820530
+2026-01-31 21:57:36 | INFO     | bot.middleware | New user created: 1136820530 (@MrAI97)
+2026-01-31 21:57:43 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): Ichancy ⚡
+2026-01-31 21:58:06 | INFO     | bot.ichancy_service | Creating Ichancy player: alighanim
+2026-01-31 21:58:06 | DEBUG    | bot.ichancy_service | Ichancy API request: createPlayer | {'params': {'playerName': 'alighanim', 'password': 'vVWwzKkrk24'}}
+2026-01-31 21:58:12 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): alighanim
+2026-01-31 21:58:15 | INFO     | bot.ichancy_service | Created Ichancy player: {'hasError': 'no', 'msg': 'Successful', 'username': 'alighanim@593', 'password': 'vVWwzKkrk24', 'other': 'createPlayer_ok'}
+2026-01-31 21:59:10 | INFO     | bot.run_bot | Starting Telegram bot...
+2026-01-31 21:59:10 | INFO     | bot.run_bot | Running in polling mode
+2026-01-31 21:59:11 | INFO     | bot.run_bot | Existing webhook removed and updates dropped
+2026-01-31 21:59:12 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-01-31 21:59:12 | INFO     | bot.run_bot | Database initialized
+2026-01-31 21:59:12 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-01-31 21:59:16 | INFO     | bot.run_bot | Ichancy API is online
+2026-01-31 21:59:18 | INFO     | bot.run_bot | Starting Telegram bot...
+2026-01-31 21:59:18 | INFO     | bot.run_bot | Running in polling mode
+2026-01-31 21:59:20 | INFO     | bot.run_bot | Existing webhook removed and updates dropped
+2026-01-31 21:59:20 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-01-31 21:59:20 | INFO     | bot.run_bot | Database initialized
+2026-01-31 21:59:20 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-01-31 21:59:24 | INFO     | bot.run_bot | Ichancy API is online
+2026-01-31 21:59:37 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): Ichancy ⚡
+2026-01-31 21:59:37 | ERROR    | bot.middleware | Error handling update from 1136820530 (@MrAI97): 'User' object has no attribute 'ichancy_password'
+Traceback (most recent call last):
+  File "/home/ubuntu/financial_bot_dist/financial-bot/bot/middlewares.py", line 140, in __call__
+    result = await handler(update, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/financial_bot_dist/financial-bot/bot/middlewares.py", line 115, in __call__
+    return await handler(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/financial_bot_dist/financial-bot/bot/middlewares.py", line 63, in __call__
+    return await handler(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/financial_bot_dist/financial-bot/bot/handlers.py", line 705, in text_router
+    return await ichancy_menu_handler(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/financial_bot_dist/financial-bot/bot/handlers.py", line 87, in ichancy_menu_handler
+    f"كلمة السر: {user.ichancy_password or '********'}"
+                  ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'ichancy_password'
+2026-01-31 22:00:04 | INFO     | bot.run_bot | Starting Telegram bot...
+2026-01-31 22:00:04 | INFO     | bot.run_bot | Running in polling mode
+2026-01-31 22:00:05 | INFO     | bot.run_bot | Existing webhook removed and updates dropped
+2026-01-31 22:00:05 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-01-31 22:00:05 | INFO     | bot.run_bot | Database initialized
+2026-01-31 22:00:05 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-01-31 22:00:10 | INFO     | bot.run_bot | Ichancy API is online
+2026-01-31 22:00:13 | INFO     | bot.run_bot | Starting Telegram bot...
+2026-01-31 22:00:14 | INFO     | bot.run_bot | Running in polling mode
+2026-01-31 22:00:15 | INFO     | bot.run_bot | Existing webhook removed and updates dropped
+2026-01-31 22:00:15 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-01-31 22:00:15 | INFO     | bot.run_bot | Database initialized
+2026-01-31 22:00:15 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-01-31 22:00:20 | INFO     | bot.run_bot | Ichancy API is online
+2026-01-31 22:00:32 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): /start
+2026-01-31 22:00:37 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): Ichancy ⚡
+2026-01-31 22:02:17 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): 🏠 القائمة الرئيسية
+2026-01-31 22:03:10 | INFO     | bot.run_bot | Starting Telegram bot...
+2026-01-31 22:03:11 | INFO     | bot.run_bot | Running in polling mode
+2026-01-31 22:03:12 | INFO     | bot.run_bot | Existing webhook removed and updates dropped
+2026-01-31 22:03:13 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-01-31 22:03:13 | INFO     | bot.run_bot | Database initialized
+2026-01-31 22:03:13 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-01-31 22:03:17 | INFO     | bot.run_bot | Ichancy API is online
+2026-01-31 22:03:30 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): Ichancy ⚡
+2026-02-01 05:08:18 | INFO     | bot.run_bot | Starting Telegram bot...
+2026-02-01 05:08:18 | INFO     | bot.run_bot | Running in polling mode
+2026-02-01 05:08:18 | INFO     | bot.run_bot | Existing webhook removed and updates dropped
+2026-02-01 05:08:18 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-02-01 05:08:18 | INFO     | bot.run_bot | Database initialized
+2026-02-01 05:08:18 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-02-01 05:08:22 | INFO     | bot.run_bot | Ichancy API is online
+2026-02-01 05:08:48 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): 1
+2026-02-01 05:09:04 | INFO     | bot.run_bot | Starting Telegram bot...
+2026-02-01 05:09:04 | INFO     | bot.run_bot | Running in polling mode
+2026-02-01 05:09:04 | INFO     | bot.run_bot | Existing webhook removed and updates dropped
+2026-02-01 05:09:05 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-02-01 05:09:05 | INFO     | bot.run_bot | Database initialized
+2026-02-01 05:09:05 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-02-01 05:09:08 | INFO     | bot.run_bot | Ichancy API is online
+2026-02-01 05:09:57 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): /start
+2026-02-01 05:10:05 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): Ichancy ⚡
+2026-02-01 05:10:08 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): 🏠 القائمة الرئيسية
+2026-02-01 05:11:26 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): 🎁 كود هدية
+2026-02-01 05:11:34 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): 🧁 سحب رصيد من البوت
+2026-02-01 05:11:35 | DEBUG    | bot.ichancy_service | Ichancy API request: get_player_balance | {'params': {'playerName': 'alighanim@593'}}
+2026-02-01 05:11:43 | DEBUG    | bot.ichancy_service | Got balance for alighanim@593: {'hasError': 'no', 'msg': 'Success', 'playerID': '380230969', 'balance': '0', 'other': 'balance_ok'}
+2026-02-01 05:11:43 | ERROR    | bot.handlers | Error starting withdrawal: '<' not supported between instances of 'str' and 'int'
+2026-02-01 05:11:51 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): 🧁 شحن رصيد في البوت
+2026-02-01 05:11:57 | DEBUG    | bot.middleware | Callback from 1136820530 (@MrAI97): deposit:amount:custom
+2026-02-01 05:12:04 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): 1000
+2026-02-01 05:12:48 | DEBUG    | bot.middleware | Callback from 1136820530 (@MrAI97): deposit:cancel
+2026-02-01 05:12:55 | DEBUG    | bot.middleware | Callback from 1136820530 (@MrAI97): menu:balance
+2026-02-01 05:12:55 | DEBUG    | bot.ichancy_service | Ichancy API request: get_player_balance | {'params': {'playerName': 'alighanim@593'}}
+2026-02-01 05:13:03 | DEBUG    | bot.ichancy_service | Got balance for alighanim@593: {'hasError': 'no', 'msg': 'Success', 'playerID': '380230969', 'balance': '0', 'other': 'balance_ok'}
+2026-02-01 05:13:03 | ERROR    | bot.handlers | Error getting balance: Unknown format code 'f' for object of type 'str'
+2026-02-01 05:13:03 | DEBUG    | bot.middleware | Callback from 1136820530 (@MrAI97): menu:balance
+2026-02-01 05:13:03 | DEBUG    | bot.ichancy_service | Ichancy API request: get_player_balance | {'params': {'playerName': 'alighanim@593'}}
+2026-02-01 05:13:11 | DEBUG    | bot.ichancy_service | Got balance for alighanim@593: {'hasError': 'no', 'msg': 'Success', 'playerID': '380230969', 'balance': '0', 'other': 'balance_ok'}
+2026-02-01 05:13:11 | ERROR    | bot.handlers | Error getting balance: Unknown format code 'f' for object of type 'str'
+2026-02-01 05:13:12 | DEBUG    | bot.middleware | Callback from 1136820530 (@MrAI97): menu:balance
+2026-02-01 05:13:12 | DEBUG    | bot.ichancy_service | Ichancy API request: get_player_balance | {'params': {'playerName': 'alighanim@593'}}
+2026-02-01 05:13:19 | DEBUG    | bot.ichancy_service | Got balance for alighanim@593: {'hasError': 'no', 'msg': 'Success', 'playerID': '380230969', 'balance': '0', 'other': 'balance_ok'}
+2026-02-01 05:13:19 | ERROR    | bot.handlers | Error getting balance: Unknown format code 'f' for object of type 'str'
+2026-02-01 05:13:20 | DEBUG    | bot.middleware | Callback from 1136820530 (@MrAI97): menu:balance
+2026-02-01 05:13:20 | DEBUG    | bot.ichancy_service | Ichancy API request: get_player_balance | {'params': {'playerName': 'alighanim@593'}}
+2026-02-01 05:13:28 | DEBUG    | bot.ichancy_service | Got balance for alighanim@593: {'hasError': 'no', 'msg': 'Success', 'playerID': '380230969', 'balance': '0', 'other': 'balance_ok'}
+2026-02-01 05:13:28 | ERROR    | bot.handlers | Error getting balance: Unknown format code 'f' for object of type 'str'
+2026-02-01 05:13:28 | ERROR    | bot.middleware | Error handling update from 1136820530 (@MrAI97): Query is too old and response timeout expired or query id is invalid
+Traceback (most recent call last):
+  File "C:\Users\Windows.10\Downloads\financial-bot-arabic-updated\financial-bot\bot\handlers.py", line 170, in balance_command
+    text += f"رصيد اللعبة: *{format_balance(balances['ichancy_balance'])}*\n"
+  File "C:\Users\Windows.10\Downloads\financial-bot-arabic-updated\financial-bot\bot\handlers.py", line 58, in format_balance
+    return f"{amount:,.0f} SYP"
+ValueError: Unknown format code 'f' for object of type 'str'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Windows.10\Downloads\financial-bot-arabic-updated\financial-bot\bot\middlewares.py", line 140, in __call__
+    result = await handler(update, context)
+  File "C:\Users\Windows.10\Downloads\financial-bot-arabic-updated\financial-bot\bot\middlewares.py", line 115, in __call__
+    return await handler(update, context)
+  File "C:\Users\Windows.10\Downloads\financial-bot-arabic-updated\financial-bot\bot\middlewares.py", line 63, in __call__
+    return await handler(update, context)
+  File "C:\Users\Windows.10\Downloads\financial-bot-arabic-updated\financial-bot\bot\handlers.py", line 679, in menu_callback
+    return await balance_command(update, context)
+  File "C:\Users\Windows.10\Downloads\financial-bot-arabic-updated\financial-bot\bot\handlers.py", line 196, in balance_command
+    await update.callback_query.answer(error_text, show_alert=True)
+  File "C:\Users\Windows.10\AppData\Roaming\Python\Python39\site-packages\telegram\_callbackquery.py", line 180, in answer
+    return await self.get_bot().answer_callback_query(
+  File "C:\Users\Windows.10\AppData\Roaming\Python\Python39\site-packages\telegram\ext\_extbot.py", line 778, in answer_callback_query
+    return await super().answer_callback_query(
+  File "C:\Users\Windows.10\AppData\Roaming\Python\Python39\site-packages\telegram\_bot.py", line 525, in decorator
+    result = await func(self, *args, **kwargs)  # skipcq: PYL-E1102
+  File "C:\Users\Windows.10\AppData\Roaming\Python\Python39\site-packages\telegram\_bot.py", line 3213, in answer_callback_query
+    return await self._post(
+  File "C:\Users\Windows.10\AppData\Roaming\Python\Python39\site-packages\telegram\_bot.py", line 613, in _post
+    return await self._do_post(
+  File "C:\Users\Windows.10\AppData\Roaming\Python\Python39\site-packages\telegram\ext\_extbot.py", line 340, in _do_post
+    return await super()._do_post(
+  File "C:\Users\Windows.10\AppData\Roaming\Python\Python39\site-packages\telegram\_bot.py", line 641, in _do_post
+    return await request.post(
+  File "C:\Users\Windows.10\AppData\Roaming\Python\Python39\site-packages\telegram\request\_baserequest.py", line 200, in post
+    result = await self._request_wrapper(
+  File "C:\Users\Windows.10\AppData\Roaming\Python\Python39\site-packages\telegram\request\_baserequest.py", line 379, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Query is too old and response timeout expired or query id is invalid
+2026-02-01 05:13:28 | DEBUG    | bot.middleware | Callback from 1136820530 (@MrAI97): menu:help
+2026-02-01 05:13:29 | DEBUG    | bot.middleware | Callback from 1136820530 (@MrAI97): menu:settings
+2026-02-01 05:13:42 | DEBUG    | bot.middleware | Message from 8334647319 (@None): /start
+2026-02-01 05:13:42 | INFO     | bot.repository | Created user: 8334647319
+2026-02-01 05:13:42 | INFO     | bot.middleware | New user created: 8334647319 (@None)
+2026-02-01 05:13:46 | DEBUG    | bot.middleware | Message from 8334647319 (@None): Ichancy ⚡
+2026-02-01 05:13:55 | DEBUG    | bot.middleware | Message from 8334647319 (@None): Ibrahim x
+2026-02-01 05:14:29 | DEBUG    | bot.middleware | Message from 8334647319 (@None): Ichancy ⚡
+2026-02-01 05:14:34 | DEBUG    | bot.middleware | Message from 8334647319 (@None): Ibrahim
+2026-02-01 05:14:49 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): Ichancy ⚡
+2026-02-01 05:15:06 | DEBUG    | bot.middleware | Callback from 8334647319 (@None): register:cancel
+2026-02-01 05:15:09 | DEBUG    | bot.middleware | Callback from 8334647319 (@None): menu:balance
+2026-02-01 05:15:12 | DEBUG    | bot.middleware | Callback from 8334647319 (@None): menu:deposit
+2026-02-01 05:15:17 | DEBUG    | bot.middleware | Callback from 8334647319 (@None): menu:deposit
+2026-02-01 05:15:23 | INFO     | bot.run_bot | Bot shutdown complete
+2026-02-01 05:15:27 | INFO     | bot.run_bot | Starting Telegram bot...
+2026-02-01 05:15:27 | INFO     | bot.run_bot | Running in polling mode
+2026-02-01 05:15:29 | INFO     | bot.run_bot | Existing webhook removed and updates dropped
+2026-02-01 05:15:29 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-02-01 05:15:29 | INFO     | bot.run_bot | Database initialized
+2026-02-01 05:15:29 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-02-01 05:15:33 | INFO     | bot.run_bot | Ichancy API is online
+2026-02-01 05:15:35 | DEBUG    | bot.middleware | Message from 8334647319 (@None): Ichancy ⚡
+2026-02-01 05:15:39 | DEBUG    | bot.middleware | Message from 8334647319 (@None): Ibrahim
+2026-02-01 05:26:30 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): https://v0.app/ref/TMV7H7
+2026-02-01 05:28:18 | DEBUG    | bot.middleware | Callback from 1136820530 (@MrAI97): menu:main
+2026-02-01 05:30:26 | INFO     | bot.run_bot | Bot shutdown complete
+2026-02-01 05:30:38 | INFO     | bot.runner | Starting Flask server...
+2026-02-01 05:30:38 | INFO     | bot.runner | Starting Telegram bot...
+2026-02-01 05:30:38 | INFO     | bot.runner | All services started. Press Ctrl+C to stop.
+2026-02-01 05:30:42 | INFO     | bot.app | Flask application created
+2026-02-01 05:30:42 | INFO     | bot.run_bot | Starting Telegram bot...
+2026-02-01 05:30:43 | INFO     | bot.run_bot | Running in polling mode
+2026-02-01 05:30:44 | INFO     | bot.run_bot | Existing webhook removed and updates dropped
+2026-02-01 05:30:45 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-02-01 05:30:45 | INFO     | bot.run_bot | Database initialized
+2026-02-01 05:30:45 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-02-01 05:30:57 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-02-01 05:31:00 | WARNING  | bot.retry | Retry 1/3 for check_status: Request to ichancy timed out after 15s
+2026-02-01 05:31:01 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-02-01 05:31:04 | WARNING  | bot.admin_auth | Security event: ADMIN_LOGIN_CONFIG | {'user_id': None}
+2026-02-01 05:31:05 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-02-01 05:31:05 | INFO     | bot.run_bot | Ichancy API is online
+2026-02-01 05:31:08 | DEBUG    | bot.ichancy_service | Ichancy API request: checkAgentBalance | {'params': None}
+2026-02-01 05:31:21 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-02-01 05:31:25 | DEBUG    | bot.ichancy_service | Ichancy API request: checkAgentBalance | {'params': None}
+2026-02-01 05:31:59 | DEBUG    | bot.middleware | Message from 8334647319 (@None): Ichancy ⚡
+2026-02-01 05:32:07 | DEBUG    | bot.middleware | Message from 8334647319 (@None): Ibrahim
+2026-02-01 05:33:19 | INFO     | bot.runner | Shutting down...
+2026-02-01 05:33:21 | INFO     | bot.runner | Starting Flask server...
+2026-02-01 05:33:21 | INFO     | bot.runner | Starting Telegram bot...
+2026-02-01 05:33:21 | INFO     | bot.runner | All services started. Press Ctrl+C to stop.
+2026-02-01 05:33:22 | INFO     | bot.app | Flask application created
+2026-02-01 05:33:22 | INFO     | bot.run_bot | Starting Telegram bot...
+2026-02-01 05:33:22 | INFO     | bot.run_bot | Running in polling mode
+2026-02-01 05:33:25 | INFO     | bot.run_bot | Existing webhook removed and updates dropped
+2026-02-01 05:33:25 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-02-01 05:33:25 | INFO     | bot.run_bot | Database initialized
+2026-02-01 05:33:25 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-02-01 05:33:29 | INFO     | bot.run_bot | Ichancy API is online
+2026-02-01 05:33:30 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-02-01 05:33:31 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-02-01 05:33:35 | DEBUG    | bot.ichancy_service | Ichancy API request: checkAgentBalance | {'params': None}
+2026-02-01 05:34:03 | DEBUG    | bot.middleware | Message from 8334647319 (@None): /start
+2026-02-01 05:34:12 | DEBUG    | bot.middleware | Message from 8334647319 (@None): Ichancy ⚡
+2026-02-01 05:34:19 | DEBUG    | bot.middleware | Message from 8334647319 (@None): Ibrahim
+2026-02-01 05:34:27 | INFO     | bot.runner | Shutting down...
+2026-02-01 05:34:31 | INFO     | bot.run_bot | Starting Telegram bot...
+2026-02-01 05:34:31 | INFO     | bot.run_bot | Running in polling mode
+2026-02-01 05:34:31 | INFO     | bot.run_bot | Existing webhook removed and updates dropped
+2026-02-01 05:34:32 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-02-01 05:34:32 | INFO     | bot.run_bot | Database initialized
+2026-02-01 05:34:32 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-02-01 05:34:35 | INFO     | bot.run_bot | Ichancy API is online
+2026-02-01 05:34:53 | DEBUG    | bot.middleware | Message from 8334647319 (@None): /start
+2026-02-01 05:34:59 | DEBUG    | bot.middleware | Message from 8334647319 (@None): Ichancy ⚡
+2026-02-01 05:35:14 | DEBUG    | bot.middleware | Message from 8334647319 (@None): Ibrahim
+2026-02-01 05:35:29 | INFO     | bot.run_bot | Bot shutdown complete
+2026-02-01 05:35:33 | INFO     | bot.run_bot | Starting Telegram bot...
+2026-02-01 05:35:33 | INFO     | bot.run_bot | Running in polling mode
+2026-02-01 05:35:34 | INFO     | bot.run_bot | Existing webhook removed and updates dropped
+2026-02-01 05:35:34 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-02-01 05:35:34 | INFO     | bot.run_bot | Database initialized
+2026-02-01 05:35:34 | DEBUG    | bot.ichancy_service | Ichancy API request: checkStatus | {'params': None}
+2026-02-01 05:35:39 | INFO     | bot.run_bot | Ichancy API is online
+2026-02-01 05:35:52 | DEBUG    | bot.middleware | Message from 8334647319 (@None): /start
+2026-02-01 05:36:00 | DEBUG    | bot.middleware | Message from 8334647319 (@None): Ichancy ⚡
+2026-02-01 05:36:09 | DEBUG    | bot.middleware | Message from 8334647319 (@None): In
+2026-02-01 05:36:41 | DEBUG    | bot.middleware | Message from 8334647319 (@None): Ugg
+2026-02-01 05:36:45 | DEBUG    | bot.middleware | Message from 8334647319 (@None): 📜 الشروط والأحكام
+2026-02-01 05:36:47 | DEBUG    | bot.middleware | Message from 8334647319 (@None): 🎉 البونصات والعروض الحالية ضمن (Thunder Bot)
+2026-02-01 05:36:49 | DEBUG    | bot.middleware | Message from 8334647319 (@None): ⭐ دخول مباشر للألعاب
+2026-02-01 05:36:50 | DEBUG    | bot.middleware | Message from 8334647319 (@None): Ichancy ⚡
+2026-02-01 05:36:53 | DEBUG    | bot.middleware | Message from 8334647319 (@None): 🧁 سحب رصيد من البوت
+2026-02-01 05:37:08 | DEBUG    | bot.middleware | Message from 8334647319 (@None): 💰 نظام الاحالات
+2026-02-01 05:37:23 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): 🏠 القائمة الرئيسية
+2026-02-01 05:37:25 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): Ichancy ⚡
+2026-02-01 05:37:28 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): سحب من حساب
+2026-02-01 05:37:28 | DEBUG    | bot.ichancy_service | Ichancy API request: get_player_balance | {'params': {'playerName': 'alighanim@593'}}
+2026-02-01 05:37:35 | DEBUG    | bot.ichancy_service | Got balance for alighanim@593: {'hasError': 'no', 'msg': 'Success', 'playerID': '380230969', 'balance': '0', 'other': 'balance_ok'}
+2026-02-01 05:37:35 | ERROR    | bot.handlers | Error starting withdrawal: '<' not supported between instances of 'str' and 'int'
+2026-02-01 05:37:49 | DEBUG    | bot.middleware | Message from 1136820530 (@MrAI97): شحن حساب
+2026-02-01 05:37:52 | DEBUG    | bot.middleware | Callback from 1136820530 (@MrAI97): deposit:amount:5000
+2026-02-01 05:37:54 | DEBUG    | bot.middleware | Callback from 1136820530 (@MrAI97): deposit:provider:syriatel_cash
+2026-02-01 05:37:54 | ERROR    | bot.middleware | Error handling update from 1136820530 (@MrAI97): 'WalletService' object has no attribute 'create_deposit_transaction'
+Traceback (most recent call last):
+  File "C:\Users\Windows.10\Downloads\financial-bot-arabic-updated\financial-bot\bot\middlewares.py", line 140, in __call__
+    result = await handler(update, context)
+  File "C:\Users\Windows.10\Downloads\financial-bot-arabic-updated\financial-bot\bot\middlewares.py", line 115, in __call__
+    return await handler(update, context)
+  File "C:\Users\Windows.10\Downloads\financial-bot-arabic-updated\financial-bot\bot\middlewares.py", line 63, in __call__
+    return await handler(update, context)
+  File "C:\Users\Windows.10\Downloads\financial-bot-arabic-updated\financial-bot\bot\handlers.py", line 377, in deposit_provider_callback
+    txn = await wallet_service.create_deposit_transaction(
+AttributeError: 'WalletService' object has no attribute 'create_deposit_transaction'
+2026-02-01 05:37:59 | DEBUG    | bot.middleware | Callback from 1136820530 (@MrAI97): deposit:provider:syriatel_cash
+2026-02-01 05:37:59 | ERROR    | bot.middleware | Error handling update from 1136820530 (@MrAI97): 'WalletService' object has no attribute 'create_deposit_transaction'
+Traceback (most recent call last):
+  File "C:\Users\Windows.10\Downloads\financial-bot-arabic-updated\financial-bot\bot\middlewares.py", line 140, in __call__
+    result = await handler(update, context)
+  File "C:\Users\Windows.10\Downloads\financial-bot-arabic-updated\financial-bot\bot\middlewares.py", line 115, in __call__
+    return await handler(update, context)
+  File "C:\Users\Windows.10\Downloads\financial-bot-arabic-updated\financial-bot\bot\middlewares.py", line 63, in __call__
+    return await handler(update, context)
+  File "C:\Users\Windows.10\Downloads\financial-bot-arabic-updated\financial-bot\bot\handlers.py", line 377, in deposit_provider_callback
+    txn = await wallet_service.create_deposit_transaction(
+AttributeError: 'WalletService' object has no attribute 'create_deposit_transaction'

@@ -1,0 +1,10 @@
+2026-01-31 22:03:10 | INFO     | bot.run_bot | Starting Telegram bot...
+/home/ubuntu/financial_bot_dist/financial-bot/bot/handlers.py:723: PTBUserWarning: If 'per_message=False', 'CallbackQueryHandler' will not be tracked for every message. Read this FAQ entry to learn more about the per_* settings: https://github.com/python-telegram-bot/python-telegram-bot/wiki/Frequently-Asked-Questions#what-do-the-per_-settings-in-conversationhandler-do.
+  conv_handler = ConversationHandler(
+2026-01-31 22:03:11 | INFO     | bot.run_bot | Running in polling mode
+/home/ubuntu/financial_bot_dist/financial-bot/run_bot.py:82: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+2026-01-31 22:03:12 | INFO     | bot.run_bot | Existing webhook removed and updates dropped
+2026-01-31 22:03:13 | INFO     | bot.repository | Database initialized at data/bot.db
+2026-01-31 22:03:13 | INFO     | bot.run_bot | Database initialized
+2026-01-31 22:03:17 | INFO     | bot.run_bot | Ichancy API is online
